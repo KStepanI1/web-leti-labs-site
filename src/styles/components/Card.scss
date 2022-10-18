@@ -1,0 +1,10 @@
+.card {
+    padding: 1.5em;
+    position: relative;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: var(--card-background);
+    border-radius: 0.5em;
+}

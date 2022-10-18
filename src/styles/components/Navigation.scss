@@ -1,0 +1,14 @@
+
+.navigation {
+    position: fixed;
+    top: var(--header-height);
+    padding: 1.5em 2em 1.5em 1.5em;
+    width: var(--nav-width);
+    
+    &__items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}

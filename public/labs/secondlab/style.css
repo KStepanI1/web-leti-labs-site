@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+.table {
+  width: 500px;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #f0f1f4;
+}
+
+.table tfoot {
+  background-color: #121212;
+  color: #fff;
+  text-align: end;
+}

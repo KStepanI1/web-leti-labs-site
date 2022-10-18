@@ -1,0 +1,25 @@
+body {
+  overflow: scroll;
+  margin: 0 auto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+  line-height: 1.20;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: var(--black-text-color);
+  background-color: var(--background-color);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,16 @@
+@import './_basis/';
+@import './components/';
+@import './pages/';
+
+
+.App {
+    position: relative;
+    max-width: 72em;
+    margin: 0 auto;
+
+    &__main {
+        width: calc(72em - var(--nav-width));
+        padding: 1.5em 3em;
+        margin-left: var(--nav-width);
+    }
+}
