@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+}
+
+.pink {
+  width: 280px;
+  height: 102px;
+  background-color: pink;
+}
+
+.yellow {
+  height: 102px;
+  background-color: yellow;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 350px 630px;
+}
+
+.green {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: greenyellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
