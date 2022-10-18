@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/web-leti-labs-site/static/css/main.9ade020c.css",
-    "main.js": "/web-leti-labs-site/static/js/main.4e285d89.js",
+    "main.js": "/web-leti-labs-site/static/js/main.3b2a2524.js",
     "index.html": "/web-leti-labs-site/index.html",
     "main.9ade020c.css.map": "/web-leti-labs-site/static/css/main.9ade020c.css.map",
-    "main.4e285d89.js.map": "/web-leti-labs-site/static/js/main.4e285d89.js.map"
+    "main.3b2a2524.js.map": "/web-leti-labs-site/static/js/main.3b2a2524.js.map"
   },
   "entrypoints": [
     "static/css/main.9ade020c.css",
-    "static/js/main.4e285d89.js"
+    "static/js/main.3b2a2524.js"
   ]
 }
