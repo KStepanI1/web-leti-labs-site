@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/web-leti-labs-site/static/css/main.9ade020c.css",
-    "main.js": "/web-leti-labs-site/static/js/main.3b2a2524.js",
+    "main.css": "/web-leti-labs-site/static/css/main.45d6430d.css",
+    "main.js": "/web-leti-labs-site/static/js/main.9f6cb27a.js",
+    "static/media/Roboto-Medium.ttf": "/web-leti-labs-site/static/media/Roboto-Medium.13a29228654d5c5ec9c4.ttf",
+    "static/media/Roboto-Regular.ttf": "/web-leti-labs-site/static/media/Roboto-Regular.03523cf578d69fa92322.ttf",
+    "static/media/Roboto-Bold.ttf": "/web-leti-labs-site/static/media/Roboto-Bold.4f39c5796e60c9d8e732.ttf",
+    "static/media/Roboto-Light.ttf": "/web-leti-labs-site/static/media/Roboto-Light.0cea39826bd36bbfe330.ttf",
     "index.html": "/web-leti-labs-site/index.html",
-    "main.9ade020c.css.map": "/web-leti-labs-site/static/css/main.9ade020c.css.map",
-    "main.3b2a2524.js.map": "/web-leti-labs-site/static/js/main.3b2a2524.js.map"
+    "main.45d6430d.css.map": "/web-leti-labs-site/static/css/main.45d6430d.css.map",
+    "main.9f6cb27a.js.map": "/web-leti-labs-site/static/js/main.9f6cb27a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ade020c.css",
-    "static/js/main.3b2a2524.js"
+    "static/css/main.45d6430d.css",
+    "static/js/main.9f6cb27a.js"
   ]
 }
