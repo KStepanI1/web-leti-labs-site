@@ -1,12 +1,15 @@
 const AUTHOR_FULL_NAME = 'Карпекин Степан Игоревич'
 
+const BASE_URL = `http://localhost:3000`
+
 const APP_PATHS = {
-    home: '/',
+    home:  '/',
     lab1: '/lab-1',
     lab2: '/lab-2',
     lab3: '/lab-3',
     lab4: '/lab-4',
     lab5: '/lab-5',
+    resultViewer: '/result-viewer',
     aboutAuthor: '/aboutus'
 }
 
@@ -17,6 +20,7 @@ const APP_PAGE_TITLES = {
     lab3: 'Лаболаторная работа 3',
     lab4: 'Лаболаторная работа 4',
     lab5: 'Лаболаторная работа 5',
+    resultViewer: 'Результат',
     aboutAuthor: 'Об авторе'
 }
 
@@ -45,10 +49,14 @@ const APP_ROUTES_CONFIG = {
         path: APP_PATHS.lab5,
         title: APP_PAGE_TITLES.lab5
     },
+    resultViewer: {
+        path: APP_PATHS.resultViewer,
+        title: APP_PAGE_TITLES.resultViewer
+    },
     aboutAuthor: {
         path: APP_PATHS.aboutAuthor,
         title: APP_PAGE_TITLES.aboutAuthor
     }
 }
 
-export { AUTHOR_FULL_NAME, APP_ROUTES_CONFIG }
+export { AUTHOR_FULL_NAME, APP_ROUTES_CONFIG, BASE_URL }

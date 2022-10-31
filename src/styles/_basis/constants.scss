@@ -12,18 +12,30 @@
     --blue-20: #77A8D0;
     --blue-30: #0057B6;
 
-    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --box-shadow-color: rgba(0, 0, 0, 0.25);
+    --popup-background: rgba(0, 0, 0, 0.1);
     --background-color: var(--white);
     --black-text-color: var(--dark-blue);
     --gray-text-color: var(--dark-gray);
 
     --block-border: 1px solid var(--gray-20);
 
+    // APP
+    --content-max-width: 80rem;
+
+    // BUTTON 
+    --btn-bg: var(--blue-20);
+    --btn-txt: var(--white);
+    --btn-hover: #4180B5;
+    --btn-active: #2369A3;
+    --btn-disabled-bg: #9195A0;
+    --btn-disabled-txt: var(--gray-30);
+
     // HEADER
     --header-box-shadow: 4px 0px 20px var(--box-shadow-color);
     --header-background: var(--white);
     --header-border: var(--block-border);
-    --header-height: 5em;
+    --header-height: 5rem;
 
     // CARD
     --card-background: var(--white);
@@ -35,5 +47,12 @@
     --nav-i-actv-txt: var(--blue-30);
 
     // NAVIGATION 
-    --nav-width: 18em;
+    --nav-width: 18rem;
+    --nav-bg: var(--white);
+    
+    // NAVIGATION MOBILE
+    --nav-mob-cur-height: 3.25rem;
+
+    // LOADER
+    --loader-color: var(--blue-20);
 }

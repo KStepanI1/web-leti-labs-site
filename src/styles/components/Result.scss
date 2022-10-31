@@ -1,0 +1,11 @@
+
+.result {
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

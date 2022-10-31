@@ -1,3 +1,15 @@
 .code {
-    margin: 2em 0 5em;
+    position: relative;
+    margin: 2rem 0 5rem;
+    
+    code {
+        background-color: var(--gray-10);
+        padding: 1.5rem 2rem !important;
+    }
+
+    &__copy {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
 }

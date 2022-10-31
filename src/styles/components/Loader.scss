@@ -1,8 +1,12 @@
 .loader {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        height: calc(100% - 52px);
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 52px);
+    
+    &_component {
+        margin: 10rem 0;
+    }
 }
 
 .spiner-medium {

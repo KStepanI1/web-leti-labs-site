@@ -1,38 +1,33 @@
-import { useEffect, useState } from "react";
-import { getFile } from "../api/file";
-import { Code } from "../components/Code";
-import { Subtitle } from "../components/Subtitle";
-import { Viewer } from "../components/Viewer";
+import { Lab, LabSections } from "../components/Lab";
+import { ResultProps } from "../components/Result";
 
 const HTML_FILE_PATH = "/labs/firthlab/index.html";
 const CSS_FILE_PATH = "/labs/firthlab/style.css";
 
 const FirthLab = () => {
-  const [labHtml, setLabHtml] = useState("");
-  const [labCss, setLabCss] = useState("");
+  const LabSections: LabSections[] = [
+    {
+      title: "Код HTML файла",
+      filePath: HTML_FILE_PATH,
+      language: "html",
+    },
+    {
+      title: "Код CSS файла",
+      filePath: CSS_FILE_PATH,
+      language: "css",
+    },
+  ];
 
-  useEffect(() => {
-    getFile({
-      path: HTML_FILE_PATH,
-      onSuccess: (text) => setLabHtml(text),
-    });
-
-    getFile({
-      path: CSS_FILE_PATH,
-      onSuccess: (text) => setLabCss(text),
-    });
-  }, []);
+  const LabResult: ResultProps = {
+    title: "Результат",
+    path: HTML_FILE_PATH,
+  };
 
   return (
     <div className="firth-lab">
-      <Subtitle text={"Код HTML файла"} />
-      <Code text={labHtml} language={"html"} />
-      <Subtitle text={"Код CSS файла"} />
-      <Code text={labCss} language={"css"} />
-      <Subtitle text={"Результат"} />
-      <Viewer path={HTML_FILE_PATH} />
+      <Lab sections={LabSections} result={LabResult} />
     </div>
   );
 };
 
-export { FirthLab };
+export default FirthLab;

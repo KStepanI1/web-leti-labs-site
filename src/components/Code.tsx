@@ -1,5 +1,5 @@
 import hljs from "highlight.js";
-import "highlight.js/styles/agate.css";
+import { CopyButton } from "./CopyButton";
 
 interface CodeProps {
   text: string;
@@ -8,13 +8,14 @@ interface CodeProps {
 
 const Code = ({ text, language }: CodeProps) => {
   return (
-    <pre>
+    <pre className="code">
       <code
-        className={` hljs language-${language} code`}
+        className={`hljs language-${language}`}
         dangerouslySetInnerHTML={{
           __html: hljs.highlight(text, { language }).value,
         }}
-      ></code>
+      />
+      <CopyButton textToCopy={text} />
     </pre>
   );
 };

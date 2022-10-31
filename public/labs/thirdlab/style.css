@@ -1,13 +1,17 @@
 body {
+  margin: 1rem auto;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
+  width: 600px;
 }
 
 .background {
   position: relative;
+  min-width: 600px;
+  min-height: 400px;
   width: 600px;
   height: 400px;
   background-image: url("./images/bg.jpg");

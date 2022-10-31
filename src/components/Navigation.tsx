@@ -1,19 +1,9 @@
-import { navigation } from "../utils/navigation";
-import { NavItem } from "./NavItem";
+import { NavigationItems } from "./NavigationItems";
 
 const Navigation = () => {
   return (
     <nav className="navigation">
-      <ul className="navigation__items">
-        {navigation.map((navItem) => (
-          <NavItem
-            key={navItem.path}
-            to={navItem.path}
-            title={navItem.title}
-            end={navItem.isEnd}
-          />
-        ))}
-      </ul>
+      <NavigationItems />
     </nav>
   );
 };

@@ -1,11 +1,11 @@
 import { NavLinkProps } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-export interface NavItemType extends NavLinkProps {
+export interface NavItemProps extends NavLinkProps {
   title: string;
 }
 
-const NavItem = ({ title, ...props }: NavItemType) => {
+const NavItem = ({ title, ...props }: NavItemProps) => {
   return (
     <li className="nav-item">
       <NavLink

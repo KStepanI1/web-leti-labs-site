@@ -2,15 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./styles/index.scss";
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 
 const rootElement = document.getElementById("root");
 
-if (rootElement) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(<React.StrictMode>
+// noinspection JSCheckFunctionSignatures
+const root = ReactDOM.createRoot(rootElement);
+
+root.render(<React.StrictMode>
     <BrowserRouter>
-      <App />
+        <App/>
     </BrowserRouter>
-  </React.StrictMode>);
-}
+</React.StrictMode>);
+
