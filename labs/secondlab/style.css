@@ -3,6 +3,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 500px;
+  margin: 0 auto;
+  min-height: 300px;
 }
 
 .table td,
