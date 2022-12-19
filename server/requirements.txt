@@ -1,0 +1,5 @@
+django==4.1
+transliterate==1.10.2
+djangorestframework==3.14.0
+django-cors-headers==3.13.0
+

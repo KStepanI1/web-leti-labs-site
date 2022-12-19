@@ -1,0 +1,48 @@
+
+.navigation-mobile {
+    position: fixed;
+    display: none;
+    top: var(--header-height);
+    width: 100%;
+    z-index: 100;
+    background-color: var(--nav-bg);
+    border-bottom: var(--header-border);
+
+    &.open &__arrow {
+        transform: rotate(-270deg);
+        transition: .3s;
+    }
+
+    &__arrow {
+        transition: .3s;
+    }
+
+    &__current {
+        display: flex;
+        gap: 1rem;
+        height: var(--nav-mob-cur-height);
+        padding: 1rem 0.5rem 1rem 4rem;
+    }
+
+    &__background.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--popup-background);
+        z-index: 50;
+    }
+
+    .navigation-items {
+        padding: 0 0.5rem 1rem 2rem;
+        box-shadow: 0 10px 10px var(--box-shadow-color);
+
+        .nav-item__link {
+            padding: 0.5rem 0.5rem 0.5rem 2rem;
+        }
+
+        position: fixed;
+        z-index: 11;
+    }
+}

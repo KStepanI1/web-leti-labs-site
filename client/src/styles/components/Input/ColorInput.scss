@@ -1,0 +1,11 @@
+.color-input {
+    position: relative !important;
+    display: inline-flex !important;
+    pointer-events: none;
+
+    &__marker-box {
+        width: 112px;
+        height: 24px;
+        border-radius: 6px;
+    }
+}

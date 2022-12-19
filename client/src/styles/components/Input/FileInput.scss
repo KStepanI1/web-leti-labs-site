@@ -1,0 +1,11 @@
+
+.file-input {
+    @include button-default;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+}

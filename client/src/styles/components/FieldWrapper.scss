@@ -1,0 +1,30 @@
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__body {
+        position: relative;
+        height: 100%;
+    }
+
+    &__hint {
+        font-size: 12px;
+        height: 16px;
+        margin-top: 4px;
+        color: #f15e5e;
+        min-height: 16px;
+        width: 100%;
+    }
+
+    &.disabled {
+        .input-field__label {
+            color: #d9dbde;
+        }
+        .input {
+            border: 2px solid #f6f7f9;
+            color: #e4e5e8;
+            background: #f9fafc;
+        }
+    }
+}

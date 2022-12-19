@@ -1,0 +1,170 @@
+.input {
+    background: #f9fafc;
+    border: solid 2px #ebecef;
+    border-radius: 6px;
+    width: 100%;
+    color: #353d4b;
+    height: 36px;
+    padding-left: 12px;
+    letter-spacing: 0.03em;
+    position: relative;
+
+    &:disabled {
+        opacity: 0.5;
+    }
+
+    &::placeholder {
+        color: #b8c1cc;
+        font-weight: 300;
+    }
+
+    &::-webkit-input-placeholder {
+        color: #b8c1cc;
+        font-weight: 300;
+    }
+
+    &::-moz-placeholder {
+        color: #b8c1cc;
+        font-weight: 300;
+    }
+
+    &::-ms-input-placeholder {
+        color: #b8c1cc;
+        font-weight: 300;
+    }
+
+    &[type='file'] {
+        display: none;
+    }
+
+    &[type='number']::-webkit-inner-spin-button,
+    [type='number']::-webkit-outer-spin-button {
+        appearance: none;
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &[type='number'] {
+        appearance: textfield;
+        -moz-appearance: textfield;
+    }
+
+    &[type='number']:hover,
+    [type='number']:focus {
+        appearance: number-input;
+        -moz-appearance: number-input;
+    }
+
+    &[type='color']::-webkit-color-swatch {
+        border-radius: 5px;
+        border: 0;
+    }
+
+    &[type='color']::-webkit-color-swatch-wrapper {
+        padding: 4px 0;
+    }
+
+    &[type='color']::-moz-color-swatch {
+        border-radius: 5px;
+        border: 0;
+    }
+
+    &:focus {
+        border-color: #d9dbde;
+    }
+
+    &.-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+
+    &-tooltip {
+        &-inner {
+            padding: 8px !important;
+            width: 470px;
+            &-form {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 8px;
+            }
+        }
+    }
+
+    &.-border {
+        border: 2px solid #e4e5e8;
+        border-radius: 7px;
+        background: #ffffff;
+        &:disabled {
+            border: 2px solid #f1f2f4;
+            &::placeholder {
+                color: #e4e5e8;
+            }
+        }
+        &:focus {
+            border-color: #d9dbde;
+        }
+    }
+
+    &.-date {
+        padding: 0 4px 0 12px;
+    }
+
+    &.-search {
+        padding-right: 74px;
+    }
+
+    &.-error {
+        border: solid 2px rgba(241, 94, 94, 0.7);
+        background: rgba(241, 94, 94, 0.05);
+    }
+
+    &__label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 4px;
+        color: #353d4b;
+    }
+    &__hint {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 4px;
+        color: #f15e5e;
+    }
+
+    &__children {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        position: absolute;
+        right: 2px;
+        top: 0;
+        width: fit-content;
+        height: 100%;
+        z-index: 100;
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: var(--input-height);
+    }
+
+    &.-color {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        width: 112px;
+    }
+}
+
+.input:focus {
+    outline: none;
+}
+
+@import 'ColorInput';
+@import 'SearchInput';
+@import 'FileInput';

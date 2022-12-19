@@ -1,0 +1,77 @@
+@mixin regular-12 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04rem;
+}
+
+@mixin regular-14 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02rem;
+}
+
+@mixin regular-16 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02rem;
+}
+
+@mixin medium-14 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02rem;
+}
+
+@mixin medium-16 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02rem;
+}
+
+@mixin medium-20 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02rem;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../../utils/fonts/Roboto-Light.ttf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../../utils/fonts/Roboto-Regular.ttf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../../utils/fonts/Roboto-Medium.ttf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../../utils/fonts/Roboto-Bold.ttf') format('opentype');
+    font-weight: 700;
+}

@@ -1,0 +1,20 @@
+.search-input {
+    background-color: #ffffff;
+
+    &__container {
+        width: 480px;
+
+        .search-submit {
+            height: 32px;
+            width: 36px;
+            background: #ffffff;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+
+        .search-clear {
+            height: 32px;
+            border-radius: 0;
+        }
+    }
+}
